@@ -1,0 +1,8 @@
+
+<h2>タイトル</h2>
+<p><%= @post.text %></p>
+<h2>内容</h2>
+<p><%= @post.body %></p>
+
+<%= link_to 'edit', edit_post_path(@post.id) %>
+<%= link_to 'show', posts_path %>

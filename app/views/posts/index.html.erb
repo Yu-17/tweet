@@ -1,0 +1,10 @@
+
+<h1>一覧</h1>
+<% @posts.each do |p| %>
+    <p>内容</p>
+    <span><%= p.text %></span>
+    <span><%= p.body %></span>
+    <span><%= link_to 'show', post_path(p) %></span>
+    <span><%= link_to 'edit', post_path(p) %></span>
+   
+<% end %>
