@@ -6,3 +6,5 @@
 
 <%= link_to 'edit', edit_post_path(@post.id) %>
 <%= link_to 'show', posts_path %>
+<%= link_to 'delete', post_path(@post.id),method: :delete %>
+

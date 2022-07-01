@@ -5,6 +5,6 @@
     <span><%= p.text %></span>
     <span><%= p.body %></span>
     <span><%= link_to 'show', post_path(p) %></span>
-    <span><%= link_to 'edit', post_path(p) %></span>
-   
+    <span><%= link_to 'edit', edit_post_path(p) %></span>
+    <span><%= link_to 'Delete', post_path(p), :method => :delete %></span>
 <% end %>
